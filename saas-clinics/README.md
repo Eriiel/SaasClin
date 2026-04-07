@@ -30,7 +30,7 @@ Desarrollar una solución escalable que permita a clínicas:
 
 El sistema sigue una arquitectura en capas:
 
-Frontend (Next.js)
+Frontend (React.js)
         ↓
 Backend API (NestJS)
         ↓
@@ -44,8 +44,7 @@ Base de datos (PostgreSQL)
 
 Frontend
 
-- Next.js
-- TypeScript
+- React.js
 
 Backend
 
