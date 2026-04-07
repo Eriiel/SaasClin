@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@saas-clinics/shared": ["packages/shared/src"],
+      "@saas-clinics/ui": ["packages/ui/src"],
+      "@saas-clinics/db": ["packages/db"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}
