@@ -17,7 +17,24 @@
     "db:studio": "pnpm --filter @saas-clinics/db prisma studio"
   },
   "devDependencies": {
-    "turbo": "^2.0.0",
-    "typescript": "^5.4.0"
-  }
+  "turbo": "^2.0.0",
+  "typescript": "^5.4.0",
+  "prisma": "^7.6.0"
+},
+  "dependencies": {
+    "@nestjs/common": "^11.1.18",
+    "@nestjs/config": "^4.0.3",
+    "@nestjs/core": "^11.1.18",
+    "@nestjs/passport": "^11.0.5",
+    "@prisma/client": "^7.6.0",
+    "class-validator": "^0.15.1",
+    "date-fns": "^4.1.0",
+    "lucide-react": "^1.7.0",
+    "nest": "^0.1.6",
+    "next": "^16.2.2",
+    "react": "^19.2.4",
+    "reflect-metadata": "^0.2.2"
+  },
+
+  "packageManager": "pnpm@9.0.0+sha512.b4106707c7225b1748b61595953ccbebff97b54ad05d002aa3635f633b9c53cd666f7ce9b8bc44704f1fa048b9a49b55371ab2d9e9d667d1efe2ef1514bcd513"
 }

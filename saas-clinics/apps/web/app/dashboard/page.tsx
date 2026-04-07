@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { api } from '../../services/api';
 import { CalendarDays, Users, Stethoscope, TrendingUp } from 'lucide-react';
 import { format } from 'date-fns';
-import { es } from 'date-fns/locale';
+import { es } from 'date-fns/locale/es';
 
 export default function DashboardPage() {
   const [stats, setStats] = useState({
@@ -43,7 +43,7 @@ export default function DashboardPage() {
     { label: 'Especialistas', value: stats.totalSpecialists, icon: Stethoscope, color: 'text-violet-600' },
   ];
 
-  return (
+  return (`
     <div>
       <h2 className="text-2xl font-semibold text-slate-900 mb-1">
         {format(new Date(), "EEEE d 'de' MMMM", { locale: es })}
@@ -89,7 +89,7 @@ export default function DashboardPage() {
           </div>
         )}
       </div>
-    </div>
+    </div>`
   );
 }
 
@@ -104,9 +104,9 @@ function StatusBadge({ status }: { status: string }) {
     PENDING: 'Pendiente',
     CANCELLED: 'Cancelada',
   };
-  return (
-    <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${styles[status]}`}>
+  return (`
+    <span className={'text-xs px-2 py-0.5 rounded-full font-medium ${styles[status]}'}>
       {labels[status]}
-    </span>
+    </span>`
   );
 }

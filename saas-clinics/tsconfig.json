@@ -9,7 +9,7 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "outDir": "dist",
-    "baseUrl": ".",
+    "baseUrl": "/",
     "paths": {
       "@saas-clinics/shared": ["packages/shared/src"],
       "@saas-clinics/ui": ["packages/ui/src"],
